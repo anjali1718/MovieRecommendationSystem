@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+        <h1 style="font-size:30px;  font-family:Georgia;">Movies Suggested For You:</h1>
+        <ul class="container" style="font-family:Georgia ">
+            {% for item in movList %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+   
+{% endblock %} 
+
+
+
